@@ -1,0 +1,20 @@
+﻿<Window x:Class="TimeofLock.LockScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeofLock"
+        mc:Ignorable="d"
+        Title="Window1" Height="285" Width="504" WindowStyle="None" AllowsTransparency="True" Loaded="Window_Loaded" Background="Transparent">
+
+    <Grid>
+        <Rectangle Fill="#000000" Margin="0,0,0,0" HorizontalAlignment="Left" Height="285" Stroke="Transparent" VerticalAlignment="Top" Width="504" Opacity="0.1" x:Name="R1"/>
+        <Image x:Name="image" Stretch="Fill" HorizontalAlignment="Left" Height="285" Margin="0,0,0,0" VerticalAlignment="Top" Width="504" Source="/image/theme_image1.jpg"/>
+        <Rectangle x:Name="re1" Fill="#000000" HorizontalAlignment="Left" Height="50" Stroke="Transparent" VerticalAlignment="Top" Width="100" Opacity="0.5"/>
+        <Rectangle x:Name="re2" Fill="#000000" HorizontalAlignment="Left" Height="75" Stroke="Transparent" VerticalAlignment="Top" Width="90" Opacity="0.5"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="251,238,0,0" TextWrapping="Wrap" Text="请输入当前登录密码" Opacity="0.7" Background="Transparent" VerticalAlignment="Top" Width="187" FontSize="15" TextAlignment="Center"/>
+        <PasswordBox x:Name="passwordBox" FontSize="20" HorizontalAlignment="Left" Margin="94,143,0,0" VerticalAlignment="Top" Height="24" Width="187" PasswordChar="*" PreviewTextInput="passwordBox_PreviewTextInput" MaxLength="20" PreviewKeyDown="passwordBox_PreviewKeyDown"/>
+        <Border x:Name="biankuang" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="27" Margin="153,185,0,0" VerticalAlignment="Top" Width="187" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
